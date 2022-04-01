@@ -70,6 +70,7 @@
 }
 
 .home-wrapper {
+  min-width: 100vw;
   min-height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -82,16 +83,14 @@
   justify-content: center;
 }
 
-.infos-home{
-width: inherit;
-}
-
-.home-content-info {
+.infos-home {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: min-content;
+  margin: 3rem;
 }
-
 .title-medium {
   font-size: 1.6rem;
   font-weight: 700;
@@ -99,6 +98,7 @@ width: inherit;
 }
 
 .title-large {
+  width: max-content;
   font-size: 2.4rem;
   font-weight: 600;
   color: #fff;
@@ -112,15 +112,72 @@ width: inherit;
   text-align: left;
 }
 
-.home-content-photo{
+.home-content-photo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.photo-user{
-  width:15rem;
-  height:15rem;
-  border-radius:50%;
+.photo-user {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #7562e0;
+  margin: 4rem 0;
+}
+
+.container-buttons-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-home {
+  min-width: 8rem;
+  height: 2.4rem;
+  border: 2px solid #7562e0;
+  background-color: #7562e0;
+  border-radius: 0.36rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-right: 0.5rem;
+}
+
+.button-about-me {
+  min-width: 8rem;
+  height: 2.4rem;
+  border: 2px solid #7562e0;
+  background-color: transparent;
+  border-radius: 0.36rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-left: 0.5rem;
+
+}
+
+.icon-button{
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0 0.6rem;
+}
+
+.bar{
+  height: 6rem;
+  background-color: #181824;
+}
+
+.about-me-wrapper{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.about-me-text {
+  height: 10rem;
   background-color: red;
 }
