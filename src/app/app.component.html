@@ -1,3 +1,4 @@
+<app-background-window [baseColorTheme]="'white'"></app-background-window>
 <div class="container-wrapper">
     <header class="col-12 header">
         <h1 class="logo">
@@ -60,7 +61,7 @@
         </div>
         <div class="column col-12 col-sm-12 col-md-6 home-content-photo">
             <div class="photo-user">
-
+                <img src="../assets/photos/photo.png" class="photo-user-image" alt="photo-user">
             </div>
         </div>
     </div>
@@ -192,7 +193,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-3 card-project">
-                    <img src="../assets/icons/first-project.png" class="img-project" alt="project image">
+                    <img src="../assets/icons/second-project.png" class="img-project" alt="project image">
                     <h3 class="title-project-black">
                         fast portfolio
                     </h3>
@@ -200,10 +201,10 @@
                         A simple portfolio structure for an unexpected situation.
                     </h4>
                     <div class="container-buttons">
-                        <button class=" button-view-project" (click)="goToUrl('https://portfolio-damiao.vercel.app/')">
+                        <button class="button-view-project" (click)="goToUrl('https://portfolio-damiao.vercel.app/')">
                             View live
                         </button>
-                        <button class=" button-outlined-git"
+                        <button class="button-outlined-git"
                             (click)="goToUrl('https://github.com/damiaofranca/my_portfolio')">
                             GitHub repo
                         </button>

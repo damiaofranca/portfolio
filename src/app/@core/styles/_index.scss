@@ -1,0 +1,59 @@
+@use "sass:map";
+@import "./../grid/styles/grid";
+@import "./create-theme";
+@import "./config";
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #7c7c7c;
+  border: 1px solid #7c7c7c;
+  width: 50%;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(0 0 0 / 80%);
+  background: #c6d8ec;
+}
+
+
+
+// Theme Configs
+body.dark-theme {
+  background: #{map.get($dark-config, background)};
+  color: #{map.get($dark-config, color)};
+
+  @include create-theme($dark-config);
+}
+
+body.light-theme,
+body:not(.dark-theme) {
+  background: #{map.get($white-config, background)};
+  color: #{map.get($white-config, color)};
+  
+  @include create-theme($white-config);
+}
+
+button {
+  color: inherit;
+}

@@ -1,0 +1,14 @@
+@use "./../search-character/styles/search-character-theming";
+@use "./../loader/styles/loader-theming";
+@use "./../character-thumbnail/styles/thumbnail-theming";
+@use "./../favorite-button/styles/favorite-button-theming";
+@use "./../switch-theme/styles/switch-theme-theming";
+
+
+@mixin create-theme($config) {
+  @include search-character-theming.theme($config);
+  @include loader-theming.theme($config);
+  @include thumbnail-theming.theme($config);
+  @include favorite-button-theming.theme($config);
+  @include switch-theme-theming.theme($config);
+}
