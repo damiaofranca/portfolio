@@ -1,3 +1,12 @@
+.myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181824;
+}
+
 .container-wrapper {
   padding: 0;
   margin: 0;
@@ -70,7 +79,7 @@
 }
 
 .home-wrapper {
-  min-width: 100vw;
+  width: 100%;
   min-height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -81,6 +90,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 768px) and (min-width: 200px) {
+    justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 360px) and (min-width: 200px) {
+    justify-content: center;
+  }
 }
 
 .infos-home {
@@ -89,12 +106,16 @@
   flex-direction: column;
   align-items: flex-start;
   width: min-content;
-  margin: 3rem;
+  margin: 1rem 2rem;
 }
 .title-medium {
   font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
+
+  @media screen and (max-width: 768px) and (min-width: 200px) {
+    font-size: 1.4rem;
+  }
 }
 
 .title-large {
@@ -102,14 +123,39 @@
   font-size: 2.4rem;
   font-weight: 600;
   color: #fff;
+
+  @media screen and (max-width: 768px) and (min-width: 200px) {
+    font-size: 2rem;
+  }
 }
 
-.title-small {
+.title-small,
+.text-about-me {
   margin-top: 1rem;
   font-size: 0.9rem;
   font-weight: 600;
   color: #fff;
   text-align: left;
+}
+
+.text-about-me-secondary {
+  line-height: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.time-upscale {
+  margin: 0 1rem 0 0;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #7562e0;
+}
+
+.experiences-text {
+  display: flex;
+  align-items: center;
 }
 
 .home-content-photo {
@@ -126,13 +172,13 @@
   margin: 4rem 0;
 }
 
-.container-buttons-home {
+.container-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.button-home {
+.button-purple {
   min-width: 8rem;
   height: 2.4rem;
   border: 2px solid #7562e0;
@@ -143,9 +189,12 @@
   color: #fff;
   letter-spacing: 0.5px;
   margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.button-about-me {
+.button-outlined {
   min-width: 8rem;
   height: 2.4rem;
   border: 2px solid #7562e0;
@@ -156,28 +205,203 @@
   color: #fff;
   letter-spacing: 0.5px;
   margin-left: 0.5rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.icon-button{
+.icon-button {
   width: 1.4rem;
   height: 1.4rem;
-  margin: 0 0.6rem;
 }
 
-.bar{
+.bar {
   height: 6rem;
   background-color: #181824;
 }
 
-.about-me-wrapper{
+.content-wrapper {
   min-height: 90vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
+.content {
+  margin-top: 3rem;
+}
 
-.about-me-text {
-  height: 10rem;
-  background-color: red;
+.cards-about-me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.cards-container,
+.card-project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media screen and (max-width: 768px) and (min-width: 200px) {
+    justify-content: center;
+  }
+}
+
+.card-about-me {
+  min-height: 10rem;
+  padding: 1rem;
+  border-radius: 0.36rem;
+  background-color: #7562e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.card-skills {
+  min-height: 13rem;
+  padding: 1rem;
+  border-radius: 0.36rem;
+  border: 2px solid #7562e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+.title-card-white {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.title-card-black {
+  font-size: 1rem;
+  color: #7562e0;
+  font-weight: 600;
+}
+
+.title-project-black {
+  font-size: 1.2rem;
+  color: #7562e0;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.gray-style {
+  background-color: #bdbdbd;
+}
+
+.title-section {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #7562e0;
+  margin: 0.5rem 0;
+}
+
+.card-icon-medium {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+.card-icon-large {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 0.5rem 0;
+}
+
+.card-icon-contact {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.card-project {
+  min-height: 18rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.36rem;
+  background-color: #31313f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.img-project {
+  width: 100%;
+  height: 40%;
+  border-radius: 0.36rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.descrition-project {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+
+.button-view-project {
+  width: 100%;
+  height: 2.4rem;
+  border: 2px solid #7562e0;
+  background-color: #7562e0;
+  border-radius: 0.36rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-right: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-outlined-git {
+  width: 100%;
+  height: 2.4rem;
+  border: 2px solid #7562e0;
+  background-color: transparent;
+  border-radius: 0.36rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.no-contain {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container-icons {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 4rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #959595;
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex-direction: column;
 }

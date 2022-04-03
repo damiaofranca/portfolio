@@ -1,27 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth !important;
 }
 
-
-*::-webkit-scrollbar-track
-{
-	background-color: #7562e0;
+*::-webkit-scrollbar-track {
+  background-color: #7562e0;
 }
 
-*::-webkit-scrollbar
-{
-	width: 4px;
-	background-color: #7562e0;
+*::-webkit-scrollbar {
+  width: 4px;
+  background-color: #7562e0;
 }
 
-*::-webkit-scrollbar-thumb
-{
-	background-color: #181824;
+*::-webkit-scrollbar-thumb {
+  background-color: #181824;
 }
-

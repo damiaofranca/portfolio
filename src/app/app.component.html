@@ -1,73 +1,240 @@
 <div class="container-wrapper">
-  <header class="col-12 header">
-    <h1 class="logo">
-      Damião França
-    </h1>
-    <li class="list-link">
-      <ul class="list-item">
-        <img src="../assets/icons/home.svg" class="
-        list-item-icon" alt="Home icon">
-        <label class="list-item-text">
-          Home
-        </label>
-      </ul>
-      <ul class="list-item">
-        <img src="../assets/icons/user.svg" class="
-        list-item-icon" alt="about-me icon">
-        <label class="list-item-text">
-          About me
-        </label>
-      </ul>
-      <ul class="list-item">
-        <img src="../assets/icons/toolbox-outline.svg" class="
-        list-item-icon" alt="projects icon">
-        <label class="list-item-text">
-          Projects
-        </label>
-      </ul>
-      <ul class="list-item">
-        <img src="../assets/icons/card-account-phone.svg" class="
-        list-item-icon" alt="contact icon">
-        <label class="list-item-text">
-          Contact
-        </label>
-      </ul>
-    </li>
-  </header>
-  <div class="col-12  home-wrapper">
-      <div class="column col-12 col-sm-12 col-md-6 group-info-home">
-        <div class="infos-home">
-          <h2 class="title-medium">
-            Hi, I'm
-          </h2>
-          <h1 class="col-12 title-large">
-            Damião S. França
-          </h1>
-          <h3 class="title-small">
-            Learning UI designer, front-end developer. I create seamless and web experiences for end-users.
-          </h3>
-          <div class="container-buttons-home">
-            <button class="button-home">
-              About me
-              <img src="../assets/icons/user.svg" class="icon-button" alt="about-me icon">
-            </button>
-            <button class="button-about-me">
-              Projects
-              <img src="../assets/icons/eye.svg" class="icon-button" alt="about-me icon">
-            </button>
-          </div>
+    <header class="col-12 header">
+        <h1 class="logo">
+            Damião França
+        </h1>
+        <li class="list-link">
+            <ul class="list-item" (click)="scroll(home)">
+                <img src="../assets/icons/home.svg" class="
+          list-item-icon" alt="Home icon">
+                <label class="list-item-text">
+                    Home
+                </label>
+            </ul>
+            <ul class="list-item" (click)="scroll(aboutMe)">
+                <img src="../assets/icons/user.svg" class="
+          list-item-icon" alt="about-me icon">
+                <label class="list-item-text">
+                    About me
+                </label>
+            </ul>
+            <ul class="list-item" (click)="scroll(myProjects)">
+                <img src="../assets/icons/toolbox-outline.svg" class="
+          list-item-icon" alt="projects icon">
+                <label class="list-item-text">
+                    Projects
+                </label>
+            </ul>
+            <ul class="list-item" (click)="scroll(contact)">
+                <img src="../assets/icons/card-account-phone.svg" class="
+          list-item-icon" alt="contact icon">
+                <label class="list-item-text">
+                    Contact
+                </label>
+            </ul>
+        </li>
+    </header>
+    <div class="col-12 row  home-wrapper" #home>
+        <div class="column col-12 col-sm-12 col-md-6 group-info-home">
+            <div class="infos-home">
+                <h2 class="title-medium">
+                    Hi, I'm
+                </h2>
+                <h1 class="col-12 title-large">
+                    Damião S. França
+                </h1>
+                <h3 class="title-small">
+                    Learning UI designer, front-end developer. I create seamless and web experiences for end-users.
+                </h3>
+                <div class="container-buttons">
+                    <button class="button-purple" (click)="scroll(aboutMe)">
+                        About me
+                        <img src="../assets/icons/user.svg" class="icon-button" alt="about-me icon">
+                    </button>
+                    <button class="button-outlined" (click)="scroll(myProjects)">
+                        Projects
+                        <img src="../assets/icons/eye.svg" class="icon-button" alt="about-me icon">
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column col-12 col-sm-12 col-md-6 home-content-photo">
-        <div class="photo-user">
+        <div class="column col-12 col-sm-12 col-md-6 home-content-photo">
+            <div class="photo-user">
 
+            </div>
         </div>
-      </div>
-  </div>
-  <div class="col-12 bar"></div>
-  <div class="column col-12 about-me-wrapper">
-    <div class="col-10 about-me-text">
-
     </div>
-  </div>
-</div>
+    <div class="col-12 bar"></div>
+    <div class="column col-12 content-wrapper">
+        <div class="col-lg-9 col-11 content" #aboutMe>
+            <h3 class="title-section">
+                About me:
+            </h3>
+            <p class="text-about-me col-12">
+                Hello, my name is Damião Silva França, I'm a web developer, learning UI designer and mobile development.
+                I have basic web development skills and an understanding of UI design principles.
+                Here are some of the top skills I have.
+            </p>
+            <p class="text-about-me-secondary">
+                <label class="time-upscale">
+                    2+
+                </label>
+                Years of experience. Specialized in building websites, while ensuring a seamless
+                web experience for end users.
+                Years of experience. Specialized in building websites, while ensuring a seamless
+                web experience for end users.
+            </p>
+            <div class="cards-about-me">
+                <div class="cards-container">
+                    <div class="card-about-me col-10 col-sm-10 col-md-3">
+                        <img src="../assets/icons/code.svg" class="card-icon-medium" alt="code icon">
+                        <h3 class="title-card-white">
+                            WEB <br>
+                            DEVELOPMENT
+                        </h3>
+                    </div>
+                    <div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
+                        <img src="../assets/icons/android.svg" class="card-icon-medium" alt="android icon">
+                        <h3 class="title-card-white">
+                            MOBILE
+                            <br>
+                            DEVELOPMENT
+                        </h3>
+                    </div>
+                    <div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
+                        <img src="../assets/icons/rulerAndpen.svg" class="card-icon-medium" alt="RulerAndPen">
+                        <h3 class="title-card-white">
+                            UI & UX
+                            <br>
+                            DESIGNING
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-11 content" #myServices>
+            <h3 class="title-section">
+                The services i offer:
+            </h3>
+            <div class="cards-container">
+                <div class="card-skills  col-10 col-sm-10 col-md-3">
+                    <img src="../assets/icons/code.svg" class="card-icon-large " alt="code icon">
+                    <h3 class="title-card-white">
+                        WEB
+                        DEVELOPMENT
+                    </h3>
+                    <h4 class="title-small">
+                        I create beautiful interfaces with simple HTML, CSS, & JavaScript and also frameworks like
+                        Angular and ReactJS.
+                    </h4>
+                </div>
+                <div class="card-skills  col-10 col-sm-10 col-md-3">
+                    <img src="../assets/icons/android.svg" class="card-icon-large " alt="android icon">
+                    <h3 class="title-card-black">
+                        MOBILE
+                        DEVELOPMENT
+                    </h3>
+                    <h4 class="title-small">
+                        I learning mobile developer. I have experience using React Native.
+                    </h4>
+                </div>
+                <div class="card-skills  col-10 col-sm-10 col-md-3">
+                    <img src="../assets/icons/git-repo.svg" class="card-icon-large" alt="git icon">
+                    <h3 class="title-card-white">
+                        VERSION CONTROL
+                    </h3>
+                    <h4 class="title-small">
+                        I can use version control systems Git & GitHub and BitBucket.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-11 content" #myProjects>
+            <h3 class="title-section">
+                Featured projects:
+            </h3>
+
+            <div class="card-project-container">
+                <div class="col-10 col-sm-10 col-md-3 card-project">
+                    <img src="../assets/icons/first-project.png" class="img-project" alt="project image">
+                    <h3 class="title-project-black">
+                        Data wiki gamer
+                    </h3>
+                    <h4 class="descrition-project">
+                        A data of gamer app of search .
+                    </h4>
+                    <div class="container-buttons">
+                        <button class="button-view-project"
+                            (click)="goToUrl('https://data-wiki-gamer.vercel.app/auth/sign-in')">
+                            View live
+                        </button>
+                        <button class=" button-outlined-git"
+                            (click)="goToUrl('https://github.com/damiaofranca/dataBook')">
+                            GitHub repo
+                        </button>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 card-project">
+                    <img src="../assets/icons/thirth-project.png" class="img-project" alt="project image">
+
+                    <h3 class="title-project-black">
+                        fast portfolio
+                    </h3>
+                    <h4 class="descrition-project">
+                        A simple to do web created in reactJS themed (in progress).
+                    </h4>
+                    <div class="container-buttons">
+                        <button class="button-outlined-git no-contain"
+                            (click)="goToUrl('https://github.com/damiaofranca/ToDoList')">
+                            GitHub repo
+                        </button>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-3 card-project">
+                    <img src="../assets/icons/first-project.png" class="img-project" alt="project image">
+                    <h3 class="title-project-black">
+                        fast portfolio
+                    </h3>
+                    <h4 class="descrition-project">
+                        A simple portfolio structure for an unexpected situation.
+                    </h4>
+                    <div class="container-buttons">
+                        <button class=" button-view-project" (click)="goToUrl('https://portfolio-damiao.vercel.app/')">
+                            View live
+                        </button>
+                        <button class=" button-outlined-git"
+                            (click)="goToUrl('https://github.com/damiaofranca/my_portfolio')">
+                            GitHub repo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-9 col-11 content" #contact>
+            <h3 class="title-section">
+                Connect with me:
+            </h3>
+            <h4 class="title-small">
+                Satisfied with me? Please contact me.
+            </h4>
+            <div class="container-icons">
+                <img src="../assets/icons/linkedin.svg"
+                    (click)="goToUrl('https://www.linkedin.com/in/dami%C3%A3o-fran%C3%A7a-a47b20223/')"
+                    class="card-icon-contact" alt="linkedin icon">
+                <img src="../assets/icons/email.svg" (click)="goToUrl('mailto:francadamiao202.com')"
+                    class="card-icon-contact" alt="email icon">
+            </div>
+
+        </div>
+        <footer class="footer">
+            <label class="createBy">
+                Created by Damiao França
+            </label>
+            and
+            <label class="designBy">
+                Designed by @ernestechie
+            </label>
+        </footer>
+    </div>
