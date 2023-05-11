@@ -1,309 +1,320 @@
 <app-background-window [baseColorTheme]="'white'"></app-background-window>
 <div class="container-wrapper">
-  <header class="col-12 header-container">
-    <h1 class="logo">Damião França</h1>
-    <li class="list-link">
-      <ul class="list-item" (click)="scroll(home)">
-        <img
-          src="../assets/icons/home.svg"
-          class="list-item-icon"
-          alt="Home icon"
-        />
-        <label class="list-item-text"> Home </label>
-      </ul>
-      <ul class="list-item" (click)="scroll(aboutMe)">
-        <img
-          src="../assets/icons/user.svg"
-          class="list-item-icon"
-          alt="about-me icon"
-        />
-        <label class="list-item-text"> Sobre mim </label>
-      </ul>
-      <ul class="list-item" (click)="scroll(myProjects)">
-        <img
-          src="../assets/icons/toolbox-outline.svg"
-          class="list-item-icon"
-          alt="projects icon"
-        />
-        <label class="list-item-text"> Projetos </label>
-      </ul>
-      <ul class="list-item" (click)="scroll(contactMe)">
-        <img
-          src="../assets/icons/card-account-phone.svg"
-          class="list-item-icon"
-          alt="contact icon"
-        />
-        <label class="list-item-text"> Contato </label>
-      </ul>
-    </li>
-  </header>
-  <div class="col-12 row home-wrapper" #home>
-    <div class="column col-12 col-sm-12 col-md-6 group-info-home">
-      <div class="infos-home">
-        <h2 class="title-medium">Olá, Me chamo</h2>
-        <h1 class="col-12 title-large">Damião S. França</h1>
-        <h3 class="title-small">Desenvolvedor Front-end</h3>
-        <div class="container-buttons">
-          <button class="button-purple" (click)="scroll(aboutMe)">
-            Sobre mim
-            <img
-              src="../assets/icons/user.svg"
-              class="icon-button"
-              alt="about-me icon"
-            />
-          </button>
-          <button class="button-outlined" (click)="scroll(myProjects)">
-            Projetos
-            <img
-              src="../assets/icons/eye.svg"
-              class="icon-button"
-              alt="about-me icon"
-            />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="column col-12 col-sm-12 col-md-6 home-content-photo">
-      <div class="photo-user">
-        <img
-          src="https://user-images.githubusercontent.com/77007541/187729431-71b0e7f1-0b92-4f58-847f-7b624207f64d.png"
-          class="photo-user-image"
-          alt="photo-user"
-        />
-      </div>
-    </div>
-  </div>
-  <div class="col-12 bar"></div>
-  <div class="column col-12 content-wrapper">
-    <div class="col-lg-9 col-11 content" #aboutMe>
-      <h3 class="title-section">Sobre mim:</h3>
-      <p class="text-about-me col-12">
-        Olá, me chamo Damião, sou desenvolvedor front-end e mobile, já trabalhei
-        em algumas empresas renomadas no Nordeste do meu pais criando soluções
-        empresárial no ramo de telecomunicação.
-      </p>
-      <p class="text-about-me-secondary">
-        <label class="time-upscale"> 2+ </label>
-        de experiência. Sou especializado em criação de Websites,
-        desenvolvimento mobile em ReactJs/Native, Angular^2, ou vanila. Também
-        me aventuro na criação design.
-      </p>
-      <div class="cards-about-me">
-        <div class="cards-container">
-          <div class="card-about-me col-10 col-sm-10 col-md-3">
-            <img
-              src="../assets/icons/code.svg"
-              class="card-icon-medium"
-              alt="code icon"
-            />
-            <h3 class="title-card-white">
-              DESENVOLVIMENTO
-              <br />
-              WEB
-            </h3>
-          </div>
-          <div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
-            <img
-              src="../assets/icons/android.svg"
-              class="card-icon-medium"
-              alt="android icon"
-            />
-            <h3 class="title-card-white">
-              DESENVOLVIMENTO
-              <br />
-              MOBILE
-            </h3>
-          </div>
-          <div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
-            <img
-              src="../assets/icons/rulerAndpen.svg"
-              class="card-icon-medium"
-              alt="RulerAndPen"
-            />
-            <h3 class="title-card-white">
-              UI & UX
-              <br />
-              DESIGN
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-9 col-11 content" #myServices>
-      <h3 class="title-section">Serviços que tenho a oferecer:</h3>
-      <div class="cards-container">
-        <div class="card-skills col-10 col-sm-10 col-md-3">
-          <img
-            src="../assets/icons/code.svg"
-            class="card-icon-large"
-            alt="code icon"
-          />
-          <h3 class="title-card-white">DESENVOLVIMENTO WEB</h3>
-          <h4 class="title-small">
-            Criação de websites em html, css e javascript vanilla e com
-            frameworks como Angular e ReactJS.
-          </h4>
-        </div>
-        <div class="card-skills col-10 col-sm-10 col-md-3">
-          <img
-            src="../assets/icons/android.svg"
-            class="card-icon-large"
-            alt="android icon"
-          />
-          <h3 class="title-card-black">MOBILE DEVELOPMENT</h3>
-          <h4 class="title-small">
-            Criação de aplicativos mobiles em React Native.
-          </h4>
-        </div>
-        <div class="card-skills col-10 col-sm-10 col-md-3">
-          <img
-            src="../assets/icons/git-repo.svg"
-            class="card-icon-large"
-            alt="git icon"
-          />
-          <h3 class="title-card-white">Versionamento de controle</h3>
-          <h4 class="title-small">
-            Utilização de GIT, GitHub, BitBucket para versionamento dos projetos
-            criados.
-          </h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-9 col-11 content" #myProjects>
-      <h3 class="title-section">Estudos pessoais:</h3>
-      <div class="card-project-container">
-        <div class="card-project">
-          <div class="img-project-container">
-            <img
-              src="../assets/icons/first-project.png"
-              alt="Bliblioteca de jogos"
-            />
-          </div>
-          <h3 class="title-project-black">Data wiki gamer</h3>
-          <h4 class="descrition-project">Uma biblioteca para buscar jogos.</h4>
-          <div class="container-buttons">
-            <button
-              class="button-view-project"
-              (click)="
+	<header class="col-12 header-container">
+		<h1 class="logo">Damião França</h1>
+		<li class="list-link">
+			<ul class="list-item" (click)="scroll(home)">
+				<img
+					src="../assets/icons/home.svg"
+					class="list-item-icon"
+					alt="Home icon"
+				/>
+				<label class="list-item-text"> Home </label>
+			</ul>
+			<ul class="list-item" (click)="scroll(aboutMe)">
+				<img
+					src="../assets/icons/user.svg"
+					class="list-item-icon"
+					alt="about-me icon"
+				/>
+				<label class="list-item-text"> Sobre mim </label>
+			</ul>
+			<ul class="list-item" (click)="scroll(myProjects)">
+				<img
+					src="../assets/icons/toolbox-outline.svg"
+					class="list-item-icon"
+					alt="projects icon"
+				/>
+				<label class="list-item-text"> Projetos </label>
+			</ul>
+			<ul class="list-item" (click)="scroll(contactMe)">
+				<img
+					src="../assets/icons/card-account-phone.svg"
+					class="list-item-icon"
+					alt="contact icon"
+				/>
+				<label class="list-item-text"> Contato </label>
+			</ul>
+		</li>
+	</header>
+	<div class="col-12 row home-wrapper" #home>
+		<div class="column col-12 col-sm-12 col-md-6 group-info-home">
+			<div class="infos-home">
+				<h2 class="title-medium">Olá, Me chamo</h2>
+				<h1 class="col-12 title-large">Damião S. França</h1>
+				<h3 class="title-small">Desenvolvedor Front-end</h3>
+				<div class="container-buttons">
+					<button class="button-purple" (click)="scroll(aboutMe)">
+						Sobre mim
+						<img
+							src="../assets/icons/user.svg"
+							class="icon-button"
+							alt="about-me icon"
+						/>
+					</button>
+					<button class="button-outlined" (click)="scroll(myProjects)">
+						Projetos
+						<img
+							src="../assets/icons/eye.svg"
+							class="icon-button"
+							alt="about-me icon"
+						/>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="column col-12 col-sm-12 col-md-6 home-content-photo">
+			<div class="photo-user">
+				<img
+					src="https://user-images.githubusercontent.com/77007541/187729431-71b0e7f1-0b92-4f58-847f-7b624207f64d.png"
+					class="photo-user-image"
+					alt="photo-user"
+				/>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 bar"></div>
+	<div class="column col-12 content-wrapper">
+		<div class="col-lg-9 col-11 content" #aboutMe>
+			<h3 class="title-section">Sobre mim:</h3>
+			<p class="text-about-me col-12">
+				Olá, meu nome é Damião e sou um desenvolvedor front-end e mobile
+				experiente. Ao longo da minha carreira, tive a oportunidade de trabalhar
+				em empresas reconhecidas no setor de telecomunicações, localizadas na
+				região Nordeste do meu país. Durante essas experiências, fui responsável
+				por criar soluções empresariais inovadoras, aplicando meu conhecimento e
+				habilidades técnicas. Minha paixão pela programação me impulsiona a
+				buscar constantemente novos desafios e aprimorar minhas competências,
+				visando oferecer resultados de alta qualidade aos meus clientes. Estou
+				comprometido em proporcionar experiências excepcionais aos usuários por
+				meio do desenvolvimento de interfaces intuitivas e responsivas.
+			</p>
+			<p class="text-about-me-secondary">
+				<label class="time-upscale"> 3.8+ </label> de experiência, Tenho uma
+				ampla experiência de trabalho na área de desenvolvimento, com foco
+				especializado na criação de websites utilizando tecnologias como ReactJS
+				e Angular^2. Além disso, possuo habilidades sólidas no desenvolvimento
+				de aplicativos móveis utilizando React Native. Além da programação,
+				também sou apaixonado por design e gosto de me aventurar nessa área.
+				Estou constantemente atualizando minhas habilidades e conhecimentos para
+				oferecer soluções inovadoras e de alta qualidade aos meus clientes.
+			</p>
+			<div class="cards-about-me">
+				<div class="cards-container">
+					<div class="card-about-me col-10 col-sm-10 col-md-3">
+						<img
+							src="../assets/icons/code.svg"
+							class="card-icon-medium"
+							alt="code icon"
+						/>
+						<h3 class="title-card-white">
+							DESENVOLVIMENTO
+							<br />
+							WEB
+						</h3>
+					</div>
+					<div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
+						<img
+							src="../assets/icons/android.svg"
+							class="card-icon-medium"
+							alt="android icon"
+						/>
+						<h3 class="title-card-white">
+							DESENVOLVIMENTO
+							<br />
+							MOBILE
+						</h3>
+					</div>
+					<div class="card-about-me gray-style col-10 col-sm-10 col-md-3">
+						<img
+							src="../assets/icons/rulerAndpen.svg"
+							class="card-icon-medium"
+							alt="RulerAndPen"
+						/>
+						<h3 class="title-card-white">
+							UI & UX
+							<br />
+							DESIGN
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-11 content" #myServices>
+			<h3 class="title-section">Serviços que tenho a oferecer:</h3>
+			<div class="cards-container">
+				<div class="card-skills col-10 col-sm-10 col-md-3">
+					<img
+						src="../assets/icons/code.svg"
+						class="card-icon-large"
+						alt="code icon"
+					/>
+					<h3 class="title-card-white">DESENVOLVIMENTO WEB</h3>
+					<h4 class="title-small">
+						Criação de websites em html, css e javascript vanilla e com
+						frameworks como Angular e ReactJS.
+					</h4>
+				</div>
+				<div class="card-skills col-10 col-sm-10 col-md-3">
+					<img
+						src="../assets/icons/android.svg"
+						class="card-icon-large"
+						alt="android icon"
+					/>
+					<h3 class="title-card-black">MOBILE DEVELOPMENT</h3>
+					<h4 class="title-small">
+						Criação de aplicativos mobiles em React Native.
+					</h4>
+				</div>
+				<div class="card-skills col-10 col-sm-10 col-md-3">
+					<img
+						src="../assets/icons/git-repo.svg"
+						class="card-icon-large"
+						alt="git icon"
+					/>
+					<h3 class="title-card-white">Versionamento de controle</h3>
+					<h4 class="title-small">
+						Utilização de GIT, GitHub, BitBucket para versionamento dos projetos
+						criados.
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-11 content" #myProjects>
+			<h3 class="title-section">Estudos pessoais:</h3>
+			<div class="card-project-container">
+				<div class="card-project">
+					<div class="img-project-container">
+						<img
+							src="../assets/icons/first-project.png"
+							alt="Bliblioteca de jogos"
+						/>
+					</div>
+					<h3 class="title-project-black">Data wiki gamer</h3>
+					<h4 class="descrition-project">Uma biblioteca para buscar jogos.</h4>
+					<div class="container-buttons">
+						<button
+							class="button-view-project"
+							(click)="
                 goToUrl('https://data-wiki-gamer.vercel.app/auth/sign-in')
               "
-            >
-              Ver ao vivo
-            </button>
-            <button
-              class="button-outlined-git"
-              (click)="goToUrl('https://github.com/damiaofranca/dataBook')"
-            >
-              Repositório
-            </button>
-          </div>
-        </div>
-        <div class="card-project">
-          <div class="img-project-container">
-            <img
-              src="../assets/photos/landing-fintech.png"
-              alt="Projeto Landing Page"
-            />
-          </div>
-          <h3 class="title-project-black">Landing page fintech</h3>
-          <h4 class="descrition-project">
-            Uma landing page de uma compânia de Fintech para fins de estudos.
-          </h4>
-          <div class="container-buttons">
-            <button
-              class="button-view-project"
-              (click)="goToUrl('https://landing-page-fintech-demo.vercel.app/')"
-            >
-              Ver ao vivo
-            </button>
-            <button
-              class="button-outlined-git"
-              (click)="
+						>
+							Ver ao vivo
+						</button>
+						<button
+							class="button-outlined-git"
+							(click)="goToUrl('https://github.com/damiaofranca/dataBook')"
+						>
+							Repositório
+						</button>
+					</div>
+				</div>
+				<div class="card-project">
+					<div class="img-project-container">
+						<img
+							src="../assets/photos/landing-fintech.png"
+							alt="Projeto Landing Page"
+						/>
+					</div>
+					<h3 class="title-project-black">Landing page fintech</h3>
+					<h4 class="descrition-project">
+						Uma landing page de uma compânia de Fintech para fins de estudos.
+					</h4>
+					<div class="container-buttons">
+						<button
+							class="button-view-project"
+							(click)="goToUrl('https://landing-page-fintech-demo.vercel.app/')"
+						>
+							Ver ao vivo
+						</button>
+						<button
+							class="button-outlined-git"
+							(click)="
                 goToUrl('https://github.com/damiaofranca/Landing-page-fintech')
               "
-            >
-              Repositório
-            </button>
-          </div>
-        </div>
-        <div class="card-project">
-          <div class="img-project-container">
-            <img
-              src="https://user-images.githubusercontent.com/77007541/187731045-ae5fb989-bad5-45d5-81f0-2b750121dfbb.png"
-              alt="Projeto para ánalise de dados"
-            />
-          </div>
-          <h3 class="title-project-black">Waether</h3>
-          <h4 class="descrition-project">
-            Um simples website para ánalise de dados clímaticos.
-          </h4>
-          <div class="container-buttons">
-            <button
-              class="button-view-project"
-              (click)="goToUrl('https://weather-time-nu.vercel.app/')"
-            >
-              Ver ao vivo
-            </button>
-            <button
-              class="button-outlined-git"
-              (click)="goToUrl('https://github.com/damiaofranca/weatherTime')"
-            >
-              Repositório
-            </button>
-          </div>
-        </div>
-        <div class="card-project">
-          <div class="img-project-container">
-            <img src="../assets/photos/pokedex.png" alt="Porjeto pokedex" />
-          </div>
-          <h3 class="title-project-black">Pokedex</h3>
-          <h4 class="descrition-project">
-            Pokedex para ánalise de estátisticas de pokemons.
-          </h4>
-          <div class="container-buttons">
-            <button
-              class="button-view-project"
-              (click)="goToUrl('https://pokedex-nzuf.vercel.app/')"
-            >
-              Ver ao vivo
-            </button>
-            <button
-              class="button-outlined-git"
-              (click)="goToUrl('https://github.com/damiaofranca/pokedex')"
-            >
-              Repositório
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-9 col-11 content" #contactMe>
-      <h3 class="title-section">Conecte-se comigo:</h3>
-      <h4 class="title-small">Satisfeito comigo? contate-me</h4>
-      <div class="container-icons">
-        <img
-          src="../assets/icons/linkedin.svg"
-          (click)="
+						>
+							Repositório
+						</button>
+					</div>
+				</div>
+				<div class="card-project">
+					<div class="img-project-container">
+						<img
+							src="https://user-images.githubusercontent.com/77007541/187731045-ae5fb989-bad5-45d5-81f0-2b750121dfbb.png"
+							alt="Projeto para ánalise de dados"
+						/>
+					</div>
+					<h3 class="title-project-black">Waether</h3>
+					<h4 class="descrition-project">
+						Um simples website para ánalise de dados clímaticos.
+					</h4>
+					<div class="container-buttons">
+						<button
+							class="button-view-project"
+							(click)="goToUrl('https://weather-time-nu.vercel.app/')"
+						>
+							Ver ao vivo
+						</button>
+						<button
+							class="button-outlined-git"
+							(click)="goToUrl('https://github.com/damiaofranca/weatherTime')"
+						>
+							Repositório
+						</button>
+					</div>
+				</div>
+				<div class="card-project">
+					<div class="img-project-container">
+						<img src="../assets/photos/pokedex.png" alt="Porjeto pokedex" />
+					</div>
+					<h3 class="title-project-black">Pokedex</h3>
+					<h4 class="descrition-project">
+						Pokedex para ánalise de estátisticas de pokemons.
+					</h4>
+					<div class="container-buttons">
+						<button
+							class="button-view-project"
+							(click)="goToUrl('https://pokedex-nzuf.vercel.app/')"
+						>
+							Ver ao vivo
+						</button>
+						<button
+							class="button-outlined-git"
+							(click)="goToUrl('https://github.com/damiaofranca/pokedex')"
+						>
+							Repositório
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-9 col-11 content" #contactMe>
+			<h3 class="title-section">Conecte-se comigo:</h3>
+			<h4 class="title-small">Satisfeito comigo? contate-me</h4>
+			<div class="container-icons">
+				<img
+					src="../assets/icons/linkedin.svg"
+					(click)="
             goToUrl(
               'https://www.linkedin.com/in/dami%C3%A3o-fran%C3%A7a-a47b20223/'
             )
           "
-          class="card-icon-contact"
-          alt="linkedin icon"
-        />
-        <img
-          src="../assets/icons/email.svg"
-          (click)="goToUrl('mailto:francadamiao202.com')"
-          class="card-icon-contact"
-          alt="email icon"
-        />
-      </div>
-    </div>
+					class="card-icon-contact"
+					alt="linkedin icon"
+				/>
+				<img
+					src="../assets/icons/email.svg"
+					(click)="goToUrl('mailto:francadamiao202.com')"
+					class="card-icon-contact"
+					alt="email icon"
+				/>
+			</div>
+		</div>
 
-    <footer class="footer">
-      <label class="createBy"> Desenvolvido por Damiao França </label>
-      e
-      <label class="designBy"> Inspirado em @ernestechie </label>
-    </footer>
-  </div>
+		<footer class="footer">
+			<label class="createBy"> Desenvolvido por Damiao França </label>
+			e
+			<label class="designBy"> Inspirado em @ernestechie </label>
+		</footer>
+	</div>
 </div>
